@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Outras seções do seu site -->
+    
+    <section id="contato">
+        <div class="linha"></div>
+        <h2>Contato</h2>
+        <section id="formulario">
+            <h2>Deixe sua mensagem</h2>
+            <form action="processa_formulario.php" method="POST"> <!-- Defina a página que irá processar os dados -->
+                <table>
+                    <tr>
+                        <th><label for="nome">Nome:</label></th>
+                        <td><input type="text" name="nome" id="nome" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">E-mail:</label></th>
+                        <td><input type="email" name="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="msg">Deixe sua mensagem:</label></th>
+                        <td><textarea name="msg" id="msg" rows="5" cols="40" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">Enviar</button></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Gabrielly Souza. Todos os direitos reservados.</p>
+        </footer>
+    </section>
+
+</body>
+</html>
